@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0"
+            prefWidth="742.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="main.gui.CustomerController">
+    <Label layoutX="14.0" layoutY="14.0" text="Customer">
+        <font>
+            <Font name="System Bold" size="12.0"/>
+        </font>
+    </Label>
+    <Label layoutX="14.0" layoutY="48.0" text="Nationality"/>
+    <Separator layoutX="14.0" layoutY="31.0" prefHeight="3.0"
+               prefWidth="718.0"/>
+    <ChoiceBox fx:id="nationality" layoutX="106.0" layoutY="44.0"
+               prefWidth="150.0"/>
+    <ChoiceBox fx:id="foodType" layoutX="106.0" layoutY="81.0"
+               prefWidth="150.0"/>
+    <Label layoutX="14.0" layoutY="85.0" text="Food Type"/>
+    <ChoiceBox fx:id="menuType" layoutX="106.0" layoutY="118.0"
+               prefWidth="150.0"/>
+    <Label layoutX="14.0" layoutY="122.0" text="Menu Type"/>
+    <Spinner fx:id="money" layoutX="106.0" layoutY="160.0"
+             prefHeight="25.0" prefWidth="150.0"/>
+    <Label layoutX="14.0" layoutY="164.0" text="Money ($)"/>
+    <Slider fx:id="vote" blockIncrement="1.0" layoutX="106.0"
+            layoutY="202.0" majorTickUnit="1.0" max="10.0" min="1.0"
+            minorTickCount="0" prefHeight="38.0" prefWidth="150.0" showTickLabels="true"
+            showTickMarks="true" snapToTicks="true"/>
+    <Label layoutX="14.0" layoutY="201.0" text="Vote"/>
+    <Separator layoutX="14.0" layoutY="247.0" prefHeight="3.0"
+               prefWidth="718.0"/>
+    <Button defaultButton="true" layoutX="695.0" layoutY="258.0"
+            mnemonicParsing="false" onAction="#onOK" text="OK"/>
+    <Button cancelButton="true" layoutX="635.0" layoutY="258.0"
+            mnemonicParsing="false" onAction="#onCancel" text="Cancel"/>
+    <Button layoutX="547.0" layoutY="258.0" mnemonicParsing="false"
+            onAction="#onShow" text="Show Menu"/>
+    <Label fx:id="stateLabel" layoutX="14.0" layoutY="262.0"
+           prefHeight="17.0" prefWidth="416.0" textFill="RED"/>
+    <Label layoutX="271.0" layoutY="40.0" text="Foods Menu :"/>
+    <TableView fx:id="table" layoutX="271.0" layoutY="60.0"
+               prefHeight="177.0" prefWidth="460.0">
+        <columns>
+            <TableColumn fx:id="idCol" editable="false" minWidth="0.0"
+                         prefWidth="65.0" sortable="false" text="ID"/>
+            <TableColumn fx:id="qualityCol" editable="false"
+                         prefWidth="63.0" sortable="false" text="Quality"/>
+            <TableColumn fx:id="internationalQualityCol" editable="false"
+                         prefWidth="141.0" sortable="false" text="International Quality"/>
+            <TableColumn fx:id="foodTypeCol" editable="false"
+                         prefWidth="173.0" sortable="false" text="Food Type"/>
+        </columns>
+    </TableView>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="600.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="main.gui.FoodsController">
+	<TableView fx:id="table" layoutX="139.0" layoutY="129.0"
+		prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0"
+		AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+		AnchorPane.topAnchor="0.0">
+		<columns>
+			<TableColumn fx:id="idCol" editable="false" prefWidth="75.0"
+				sortable="false" text="ID" />
+			<TableColumn fx:id="qualityCol" editable="false"
+				prefWidth="75.0" sortable="false" text="Quality" />
+			<TableColumn fx:id="internationalQualityCol" editable="false"
+				prefWidth="135.0" sortable="false" text="International Quality" />
+			<TableColumn fx:id="nationalityCol" editable="false"
+				prefWidth="75.0" sortable="false" text="Nationality" />
+			<TableColumn fx:id="foodTypeCol" editable="false"
+				prefWidth="155.0" sortable="false" text="Food Type" />
+			<TableColumn fx:id="numberCol" editable="false"
+				prefWidth="67.0" sortable="false" text="Number" />
+		</columns>
+	</TableView>
+</AnchorPane>

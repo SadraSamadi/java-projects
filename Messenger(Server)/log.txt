@@ -1,0 +1,6 @@
+Wed Jul 13 19:46:47 IRDT 2016
+Server started --> \192.168.1.104:6543
+sadra joined ...
+ali joined ...
+sadra: hello --> ali
+ali: hfhgd --> sadra

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0"
+	prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="main.gui.MainController">
+	<center>
+		<TableView fx:id="table" prefHeight="200.0" prefWidth="200.0"
+			BorderPane.alignment="CENTER">
+			<columns>
+				<TableColumn fx:id="idCol" editable="false" prefWidth="32.0"
+					sortable="false" text="ID" />
+				<TableColumn fx:id="nationalityCol" editable="false"
+					prefWidth="86.0" sortable="false" text="Nationality" />
+				<TableColumn fx:id="foodTypeCol" editable="false"
+					prefWidth="124.0" sortable="false" text="Food Type" />
+				<TableColumn fx:id="menuTypeCol" editable="false"
+					prefWidth="113.0" sortable="false" text="Menu Type" />
+				<TableColumn fx:id="moneyCol" editable="false"
+					prefWidth="66.0" sortable="false" text="Money" />
+				<TableColumn fx:id="voteCol" editable="false" prefWidth="47.0"
+					sortable="false" text="Vote" />
+			</columns>
+			<contextMenu>
+				<ContextMenu>
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#onSettlementClick"
+							text="Settlment" />
+					</items>
+				</ContextMenu>
+			</contextMenu>
+		</TableView>
+	</center>
+	<top>
+		<ToolBar prefHeight="40.0" prefWidth="200.0"
+			BorderPane.alignment="CENTER">
+			<Label fx:id="fundLabel" text="Fund : 0 $" />
+			<Separator orientation="VERTICAL" />
+			<Button mnemonicParsing="false" onAction="#addCustomer" text="Add Customer" />
+			<Button mnemonicParsing="false" onAction="#onCooking" text="Cooking" />
+			<Button mnemonicParsing="false" onAction="#openWaiters" text="Waiters" />
+			<Button mnemonicParsing="false" onAction="#openFoods" text="Foods" />
+		</ToolBar>
+	</top>
+</BorderPane>
